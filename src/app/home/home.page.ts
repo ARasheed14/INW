@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { Animation, AnimationController, IonCard, IonCardContent } from '@ionic/angular';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Animation, AnimationController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,15 +7,25 @@ import { Animation, AnimationController, IonCard, IonCardContent } from '@ionic/
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  @ViewChild(IonCard, { read: ElementRef }) card: ElementRef<HTMLIonCardElement>;
   @ViewChild('square',  { read: ElementRef }) square: ElementRef;
+  @ViewChild('title', { read: ElementRef }) title: ElementRef;
 
-  private animation: Animation;
+  private headTitle: Animation;
+  private subTitle: Animation;
 
   constructor(private animationCtrl: AnimationController) {}
 
   ngAfterViewInit() {
-    this.animation = this.animationCtrl
+
+    this.headTitle = this.animationCtrl
+      .create()
+      .addElement(this.title.nativeElement)
+      .duration(1000)
+      .iterations(10)
+      .direction('alternate')
+      .fromTo('color', '#8c8c8c', 'red');
+
+    this.subTitle = this.animationCtrl
       .create()
       .addElement(this.square.nativeElement)
       .fill('none')
@@ -31,6 +41,7 @@ export class HomePage {
   }
 
   runAnimation() {
-    this.animation.play();
+    this.headTitle.play();
+    this.subTitle.play();
   }
 }
