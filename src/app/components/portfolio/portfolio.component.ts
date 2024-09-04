@@ -24,7 +24,22 @@ export class PortfolioComponent  implements OnInit {
         name: 'Portfolio 3',
         url: '',
         image: 'https://ionicframework.com/docs/img/demos/card-media.png'
-    }];
+    },
+    {
+      name: 'Portfolio 4',
+      url: '',
+      image: 'https://ionicframework.com/docs/img/demos/card-media.png'
+  },
+  {
+      name: 'Portfolio 5',
+      url: '',
+      image: 'https://ionicframework.com/docs/img/demos/card-media.png'
+  },
+  {
+      name: 'Portfolio 6',
+      url: '',
+      image: 'https://ionicframework.com/docs/img/demos/card-media.png'
+  }];
 
   constructor() { }
 

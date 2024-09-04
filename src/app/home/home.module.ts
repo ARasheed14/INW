@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderComponent } from '../components/header/header.component';
+import { FooterComponent } from '../components/footer/footer.component';
 import { PortfolioComponent } from '../components/portfolio/portfolio.component';
 
 
@@ -16,6 +17,6 @@ import { PortfolioComponent } from '../components/portfolio/portfolio.component'
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, HeaderComponent, PortfolioComponent]
+  declarations: [HomePage, HeaderComponent, FooterComponent, PortfolioComponent]
 })
 export class HomePageModule {}
