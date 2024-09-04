@@ -3,10 +3,10 @@ import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss'],
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 })
-export class MenuComponent  implements OnInit {
+export class HeaderComponent  implements OnInit {
 
   public rightMenu = [
     {
