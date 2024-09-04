@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { Animation, AnimationController } from '@ionic/angular';
+import { Animation, AnimationController, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +7,44 @@ import { Animation, AnimationController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  @ViewChild('square',  { read: ElementRef }) square: ElementRef;
+  @ViewChild('square', { read: ElementRef }) square: ElementRef;
   @ViewChild('title', { read: ElementRef }) title: ElementRef;
 
+  public menuType: string = 'overlay';
   private headTitle: Animation;
   private subTitle: Animation;
+  public portfolioList = [
+    {
+      name: 'Portfolio 1',
+      url: '',
+      image: '',
+    },
+    { 
+      name: 'Portfolio 2' 
+    }, 
+    { 
+      name: 'Portfolio 3'
+     }];
+     
+     public rightMenu = [
+      {
+        name: 'Home'
+      },
+      {
+        name: 'About'
+      },
+      {
+        name: 'Our Services'
+      },
+      {
+        name: 'Portfolio'
+      },
+      {
+        name: 'Contact'
+      }
+     ]
 
-  constructor(private animationCtrl: AnimationController) {}
+  constructor(private animationCtrl: AnimationController, public menuCtrl: MenuController) { }
 
   ngAfterViewInit() {
 
@@ -36,12 +67,16 @@ export class HomePage {
         { offset: 0.5, transform: 'scale(1.2)', opacity: '0.3' },
         { offset: 1, transform: 'scale(1)', opacity: '1' },
       ]);
-      
-      this.runAnimation();
+
+    this.runAnimation();
   }
 
   runAnimation() {
     this.headTitle.play();
     this.subTitle.play();
+  }
+
+  toggleSideMenu() {
+    this.menuCtrl.open();
   }
 }
