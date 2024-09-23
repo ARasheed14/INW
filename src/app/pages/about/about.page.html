@@ -1,3 +1,55 @@
+<app-menu class="menu" slot="fixed" />
 <ion-content [fullscreen]="true">
-  <app-menu class="menu" slot="fixed" />
+  <div class="page-banner container">
+    <h1 class="page-title">About Us</h1>
+    <p class="lead-section">
+      InnoWeb is a software agency that specializes in digital transformation. We offer our customers a vast amount of
+      experience in software design, development and deployment.
+    </p>
+  </div>
+  <div class="content-section">
+    some sort of image
+  </div>
+  <ion-grid>
+    <ion-row class="ion-align-items-center team-row">
+      <ion-col size="12" size-md="4">
+        <ion-card class="team-card">
+          <ion-card-header class="card-header">
+            <ion-card-title>Team Members</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list class="team-list">
+              <ion-item *ngFor="let teamMember of teamMembers">
+                <ion-avatar aria-hidden="true" slot="start">
+                  <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+                </ion-avatar>
+                <ion-label>{{teamMember.name}}</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-row *ngFor="let teamMember of teamMembers">
+          <ion-col class="team-col" size="2">
+            <ion-avatar aria-hidden="true">
+              <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col class="team-col-card">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-subtitle>{{teamMember.cardTitle}}</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                {{teamMember.description}}             
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-footer />
 </ion-content>

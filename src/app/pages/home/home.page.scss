@@ -7,13 +7,14 @@ h1 {
   font-size: 60px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   color: #757575;
+  margin: 0px;
 }
 .content-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  min-height: 350px;
+  min-height: 300px;
   height: 70vh; // Banner
   background-color: #D6D6D6;
 }
@@ -42,9 +43,8 @@ h1 {
     font-size: 1.625rem;
   }
 }
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .content-section {
-    // height: 40vh; TODO: fix banner view for smaller screens
+   height: 300px;
   }
 }

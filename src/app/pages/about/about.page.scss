@@ -1,3 +1,91 @@
+ion-content {
+    display: flex;
+}
+
 .menu {
     width: 100%;
+}
+
+.page-banner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.page-title {
+    margin-bottom: 1rem;
+}
+
+.lead-section {
+    margin: 0;
+    font-size: 1.625rem;
+    line-height: 1.6;
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 300px;
+    height: 70vh; // Banner
+    background-color: #D6D6D6;
+    height: 70vh;
+}
+.team-row {
+    text-align: center;
+}
+.card-header {
+    border-bottom: 1px solid #F2F2F2;
+}
+.team-card {
+    border-radius: 15px;
+}
+.team-list {
+    padding: 20px;
+}
+.team-list ion-item {
+        --border-style: none;
+}
+.team-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-col-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.team-col-card ion-card {
+    box-shadow: none;
+}
+
+//** Media Queries **//
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .h1, .hero-title, .page-title, h1 {
+        font-size: 5.125rem;
+    }
+    .team-card {
+        max-width: 300px;
+    }
 }

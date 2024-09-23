@@ -5,9 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { FooterComponent } from '../../components/footer/footer.component';
-import { PortfolioComponent } from '../../components/portfolio/portfolio.component';
 import { HeaderModule } from 'src/app/components/header/header.module';
+import { FooterModule } from 'src/app/components/footer/footer.module';
+import { PortfolioModule } from 'src/app/components/portfolio/portfolio.module';
 
 
 @NgModule({
@@ -16,8 +16,10 @@ import { HeaderModule } from 'src/app/components/header/header.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule,
+    PortfolioModule
   ],
-  declarations: [HomePage, FooterComponent, PortfolioComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}
