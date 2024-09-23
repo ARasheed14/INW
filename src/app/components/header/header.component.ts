@@ -10,19 +10,24 @@ export class HeaderComponent  implements OnInit {
 
   public rightMenu = [
     {
-      name: 'Home'
+      name: 'Home',
+      route: '/home'
     },
     {
-      name: 'About'
+      name: 'About',
+      route: '/about'
     },
     {
-      name: 'Our Services'
+      name: 'Our Services',
+      route: '/our-services'
     },
     {
-      name: 'Portfolio'
+      name: 'Portfolio',
+      route: '/portfolio'
     },
     {
-      name: 'Contact' 
+      name: 'Contact',
+      route: '/contact-us'
     }
    ];
 

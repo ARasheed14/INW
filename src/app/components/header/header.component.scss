@@ -1,3 +1,10 @@
+ion-header {
+    width: 100%;
+}
+ion-button {
+    border-radius: 25px;
+    --border-radius: 25px;
+}
 .left-menu {
     text-align: left;
 }
@@ -6,4 +13,7 @@
 }
 .right-menu ion-button {
     --color: #757575;
+}
+.active {
+    background-color: #D6D6D6;
 }
