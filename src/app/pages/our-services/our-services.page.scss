@@ -1,3 +1,70 @@
 .menu {
     width: 100%;
 }
+
+.page-banner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.page-title {
+    margin-bottom: 1rem;
+}
+
+.lead-section {
+    margin: 0;
+    font-size: 1.625rem;
+    line-height: 1.6;
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.dash {
+    background: #757575;
+    width: 20px;
+    height: 4px;
+}
+
+.list-label {
+    font-size: 1.625rem;
+}
+
+ion-list-header {
+    font-size: 48px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 300px;
+    height: 70vh; // Banner
+    background-color: #D6D6D6;
+    height: 70vh;
+}
+
+//** Media Queries **//
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .h1,
+    .hero-title,
+    .page-title,
+    h1 {
+        font-size: 5.125rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .alt-container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}

@@ -1,4 +1,51 @@
 <app-menu class="menu" slot="fixed" />
 <ion-content [fullscreen]="true">
+    <div class="page-banner container">
+        <h1 class="page-title">Our Services</h1>
+        <p class="lead-section">
+            Quality reliable solutions are our main service.
+        </p>
+    </div>
+    <ion-grid class="container alt-container">
+        <ion-row>
+            <ion-col *ngFor="let service of services" size="6">
+                <h3>{{service.name}}</h3>
+                <p>{{service.note}}</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <div class="content-section">
+        some sort of image
+      </div>
+    <ion-grid class="container alt-container">
+        <ion-row>
+            <ion-col>
+                <ion-list lines="none">
+                    <ion-list-header>
+                        <ion-label>Our Technologies</ion-label>
+                      </ion-list-header>
+                    <ion-item *ngFor="let technology of technologies">
+                        <div slot="start">
+                            <div class="dash"></div>
+                          </div>
+                        <ion-label class="list-label">{{technology}}</ion-label>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+            <ion-col>
+                <ion-list lines="none">
+                    <ion-list-header>
+                        <ion-label>Our Skills</ion-label>
+                      </ion-list-header>
+                    <ion-item *ngFor="let skill of skills">
+                        <div slot="start">
+                            <div class="dash"></div>
+                          </div>
+                        <ion-label class="list-label">{{skill}}</ion-label>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
     <app-footer />
 </ion-content>

@@ -11,7 +11,7 @@ export class AboutPage implements OnInit {
   teamMembers = [
     {
       name: 'Ali',
-      description: 'Having 10+ years of software development experience has allowed me to expand my skill set into many different areas of the software development process. I am not just a coder. I am a researcher, architect, designer etc. I work well under pressure.',
+      description: 'Having 10+ years of software development experience has allowed me to expand my skill set into many different areas of the software development process. I am not just a coder. I am a researcher, architect, designer etc.',
       cardTitle: 'Ali - Architect and Lead Developer'
     },
     {

@@ -89,3 +89,10 @@ ion-content {
         max-width: 300px;
     }
 }
+
+@media only screen and (min-width: 992px) {
+    .alt-container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
