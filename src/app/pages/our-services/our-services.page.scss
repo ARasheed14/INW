@@ -36,6 +36,15 @@ ion-list-header {
     font-size: 48px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .content-section {
     display: flex;
     flex-direction: column;
@@ -45,6 +54,11 @@ ion-list-header {
     height: 70vh; // Banner
     background-color: #D6D6D6;
     height: 70vh;
+}
+
+.alt-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 //** Media Queries **//
