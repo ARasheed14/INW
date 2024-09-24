@@ -23,7 +23,7 @@ export class HeaderComponent  implements OnInit {
     },
     {
       name: 'Portfolio',
-      route: '/portfolio'
+      route: '/projects'
     },
     {
       name: 'Contact',

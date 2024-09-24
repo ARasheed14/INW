@@ -1,0 +1,33 @@
+<app-menu class="menu" slot="fixed" />
+<ion-content [fullscreen]="true">
+  <div class="page-banner container">
+    <h1 class="page-title">Let's Chat!</h1>
+    <p class="lead-section">
+      Contact us for a free consultation
+    </p>
+  </div>
+  <ion-grid class="container">
+    <ion-row *ngFor="let project of projectList">
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="{{project.image}}" />
+          <ion-card-header>
+              <ion-card-title>{{ project.name }}</ion-card-title>
+              <ion-card-subtitle>{{ project.subtitle }}</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+              
+          </ion-card-content>
+      </ion-card>
+      </ion-col>
+      <ion-col class="project-description">
+        <ion-item lines="none">
+          <p>{{ project.description }}</p>
+          <!-- <h3><a #href="">Learn More</a></h3> -->
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-footer />
+</ion-content>
