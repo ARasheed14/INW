@@ -6,12 +6,14 @@ $theme-gray: #747373;
   left: 0;
   right: 0;
 }
+
 h1 {
   font-size: 60px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   color: #757575;
   margin: 0px;
 }
+
 .content-section {
   display: flex;
   flex-direction: column;
@@ -21,12 +23,26 @@ h1 {
   height: 70vh; // Banner
   background-color: #D6D6D6;
 }
+
+.home-top-banner {
+  height: 300px;
+  width: 100%;
+  background: url("../../../assets/home-banner.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .section-text {
   font-size: 1.3rem;
 }
+
 .menu {
   width: 100%;
 }
+
 .cta-button {
   --background: #{$theme-blue};
   --background-hover: #000;
@@ -36,25 +52,50 @@ h1 {
   width: 220px;
   white-space: nowrap;
 }
-.content-section, .second-content-section, .cta-section {
+
+.content-section,
+.second-content-section,
+.cta-section {
   padding: 4rem;
 }
 
+.banner-button-container {
+  position: relative;
+}
+
+.top-btn {
+  position: absolute; // TODO: figure out a better way to position the button
+}
+
 //** Media Queries **//
+
 @media only screen and (min-width: 768px) {
   .section-text {
     font-size: 1.625rem;
   }
+  .home-top-banner {
+    height: 390px;
+  }
 }
+
 @media only screen and (max-width: 600px) {
   .content-section {
-   height: 300px;
+    height: 300px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .container {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .home-top-banner {
+    height: 490px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-top-banner {
+    height: 590px;
   }
 }
