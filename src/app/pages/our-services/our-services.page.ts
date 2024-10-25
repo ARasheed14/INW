@@ -10,7 +10,7 @@ export class OurServicesPage implements OnInit {
   services = [
     {
       name: 'Digital Consulting',
-      note: 'We offer 1 on 1 sessions, knowledge transfrs and many different type of workshops'
+      note: 'We offer 1 on 1 sessions, knowledge transfers and many different workshops.'
     },
     {
       name: 'Graphic Design',

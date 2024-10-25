@@ -1,3 +1,5 @@
+$theme-blue: #2E69B0;
+
 ion-header {
     width: 100%;
 }
@@ -12,8 +14,15 @@ ion-button {
     text-align: right;
 }
 .right-menu ion-button {
-    --color: #757575;
+    --color: #234090;
 }
 .active {
-    background-color: #D6D6D6;
+    background-color: #2E69B0;
+}
+.right-menu ion-button.active {
+    --color: #ffffff;
+}
+.header-logo {
+    height:auto;
+    width: 70px;
 }

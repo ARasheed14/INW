@@ -1,3 +1,6 @@
+$theme-blue: #2E69B0;
+$theme-gray: #747373;
+
 .menu {
     width: 100%;
 }
@@ -34,4 +37,45 @@
 .project-description {
     display: flex;
     align-items: center;
+}
+
+h1,
+h3,
+ion-label {
+    color: $theme-blue;
+}
+
+ion-card-title {
+    color: $theme-gray;
+}
+
+p {
+    color: $theme-gray;
+}
+
+@media only screen and (max-width: 576px) {
+    .project-description {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .h1,
+    .hero-title,
+    .page-title,
+    h1 {
+        font-size: 5.125rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .alt-container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
 }

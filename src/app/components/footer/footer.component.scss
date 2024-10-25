@@ -1,10 +1,18 @@
+$theme-blue: #2E69B0;
+$theme-gray: #747373;
+
 .footer-content {
     text-align: center;
 }
 ion-icon {
     padding: 5px;
     font-size: 30px;
+    color: $theme-blue;
+}
+ion-icon:hover {
+    color: $theme-gray;
 }
 .copyright {
     font-size: 18px;
+    color: $theme-blue;
 }
