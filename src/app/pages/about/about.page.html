@@ -7,10 +7,10 @@
       experience in software design, development and deployment.
     </p>
   </div>
-  <div class="content-section">
-    some sort of image
+  <div>
+    <img src="../../../assets/innowebbanner_au.jpg" />
   </div>
-  <ion-grid class="container alt-container">
+  <ion-grid class="alt-container">
     <ion-row class="ion-align-items-center team-row">
       <ion-col size="12" size-md="4">
         <ion-card class="team-card">
@@ -39,11 +39,11 @@
           <ion-col class="team-col-card">
             <ion-card>
               <ion-card-header>
-                <ion-card-subtitle>{{teamMember.cardTitle}}</ion-card-subtitle>
+                <ion-card-subtitle class="team-member-title">{{teamMember.cardTitle}}</ion-card-subtitle>
               </ion-card-header>
-            
+
               <ion-card-content>
-                {{teamMember.description}}             
+                <p class="team-member-desc">{{teamMember.description}}</p>
               </ion-card-content>
             </ion-card>
           </ion-col>

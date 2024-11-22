@@ -24,23 +24,22 @@ h1 {
   background-color: #D6D6D6;
 }
 
-.home-top-banner {
-  height: 300px;
-  width: 100%;
-  background: url("../../../assets/home-banner.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .section-text {
   font-size: 1.3rem;
 }
 
 .menu {
   width: 100%;
+}
+
+.cta-section {
+  background: url("../../../assets/blue_background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 .cta-button {

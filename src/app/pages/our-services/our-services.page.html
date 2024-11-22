@@ -14,20 +14,20 @@
             </ion-col>
         </ion-row>
     </ion-grid>
-    <div class="content-section">
-        some sort of image
-      </div>
+    <div>
+        <img src="../../../assets/webservices.jpg" />
+    </div>
     <ion-grid class="container alt-container">
         <ion-row>
             <ion-col size="12" size-md="6">
                 <ion-list lines="none">
                     <ion-list-header>
                         <ion-label>Our Technologies</ion-label>
-                      </ion-list-header>
+                    </ion-list-header>
                     <ion-item *ngFor="let technology of technologies">
                         <div slot="start">
                             <div class="dash"></div>
-                          </div>
+                        </div>
                         <ion-label class="list-label">{{technology}}</ion-label>
                     </ion-item>
                 </ion-list>
@@ -36,11 +36,11 @@
                 <ion-list lines="none">
                     <ion-list-header>
                         <ion-label>Our Skills</ion-label>
-                      </ion-list-header>
+                    </ion-list-header>
                     <ion-item *ngFor="let skill of skills">
                         <div slot="start">
                             <div class="dash"></div>
-                          </div>
+                        </div>
                         <ion-label class="list-label">{{skill}}</ion-label>
                     </ion-item>
                 </ion-list>
